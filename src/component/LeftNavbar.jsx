@@ -13,7 +13,7 @@ const LeftNavbar = () => {
     } ,[])
     return (
         <div>
-            <div className='font-bold text-xl'>All Caterogy</div>
+            <div className='font-bold text-xl mb-3'>All Caterogy({categories.length})</div>
             <div className='flex flex-col gap-2'>
             {
                 categories.map((category) => <button className='btn' key={category.category_id}>{category.category_name}</button>)

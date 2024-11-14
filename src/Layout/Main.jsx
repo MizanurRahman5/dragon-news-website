@@ -4,6 +4,7 @@ import Header from '../component/Header';
 import LatestNews from '../component/LatestNews';
 import Navbare from '../component/Navbare';
 import LeftNavbar from '../component/LeftNavbar';
+import RightNavbar from '../component/RightNavbar';
 
 const Main = () => {
     return (
@@ -22,7 +23,9 @@ const Main = () => {
             <LeftNavbar/>
             </aside>
             <section className='col-span-6'>Main content</section>
-            <aside className='col-span-3'>right navbar</aside>
+            <aside className='col-span-3'>
+                <RightNavbar/>
+            </aside>
            </main>
             <Outlet/>
         </div>
