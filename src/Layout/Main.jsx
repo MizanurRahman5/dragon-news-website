@@ -22,12 +22,14 @@ const Main = () => {
             <aside className='col-span-3'>
             <LeftNavbar/>
             </aside>
-            <section className='col-span-6'>Main content</section>
+            <section className='col-span-6'>
+                <Outlet/>
+            </section>
             <aside className='col-span-3'>
                 <RightNavbar/>
             </aside>
            </main>
-            <Outlet/>
+            
         </div>
     );
 };
